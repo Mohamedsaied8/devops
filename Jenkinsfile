@@ -1,7 +1,7 @@
 pipeline {
     agent {
         dockerfile {
-            args '-v $WORKSPACE:/mnt -w /mnt'
+            args '-v D:\work\training\devops\mnt:/mnt -w /mnt'
         }
     }
     stages {
