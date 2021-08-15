@@ -1,12 +1,11 @@
 pipeline {
     agent {
         dockerfile {
-            filename 'dockerfile'
             args '-v $WORKSPACE:/mnt'
         }
     }
     stages {
-        stage('Build') {
+        stage('UnitTesting') {
             steps {
                 sh 'make -f mnt/makefile'
             }
