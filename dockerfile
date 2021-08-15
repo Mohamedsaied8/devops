@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y cmake \
 	&& make install \
     && cd / \
 	&& rm -rf /googletest
-	
+
 ENV LIBRARY_PATH /usr/local/lib
 	
 WORKDIR	/mnt
