@@ -1,7 +1,8 @@
 pipeline {
     agent {
         dockerfile {
-            args '-v D:\work\training\devops\mnt:/mnt -w /mnt'
+            args '-v $WORKSPACE:/mnt -w /mnt'
+            customWorkspace 'GoogleTest'
         }
     }
     stages {
