@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('UnitTesting') {
             steps {
-                sh 'make -f mnt/makefile'
+                sh 'make -f makefile'
             }
         }
         
