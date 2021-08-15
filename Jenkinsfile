@@ -1,7 +1,7 @@
 pipeline {
     agent {
         dockerfile {
-            filename 'Dockerfile'
+            filename 'dockerfile'
             args '-v $WORKSPACE:/mnt'
         }
     }
