@@ -8,7 +8,9 @@ pipeline {
     stages {
         stage('UnitTesting') {
             steps {
-                sh 'make -f makefile'
+				cleanWs()
+				checkout scm
+				sh 'make -f makefile'
             }
         }
         
