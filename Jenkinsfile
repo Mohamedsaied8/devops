@@ -1,7 +1,7 @@
 pipeline {
     agent {
         dockerfile {
-            args '-v C:\\Users\\admin\\AppData\\Local\\Jenkins\\.jenkins:/mnt'
+            args '-v $WORKSPACE:/mnt'
             customWorkspace 'GoogleTest'
         }
     }
