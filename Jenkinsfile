@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        Dockerfile {
+        dockerfile {
             args '-v $WORKSPACE:/mnt'
             customWorkspace 'GoogleTest'
         }
