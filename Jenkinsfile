@@ -10,6 +10,7 @@ pipeline {
             steps {
 		checkout scm
 		sh 'ls && cd mnt && make -f makefile'
+		cleanWs()
             }
         }
         
