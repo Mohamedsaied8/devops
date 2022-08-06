@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
 
-TEST(Basic, TestShouldFail)
+TEST(Basic, TestShouldPASS)
 {
-    FAIL();
+    EXPECT_EQ(1,1);
 }
