@@ -9,7 +9,7 @@ pipeline {
         stage('UnitTesting') {
             steps {
 		checkout scm
-		sh 'ls && cd /mnt && make -f makefile'
+		sh 'ls && cd mnt && make -f makefile'
             }
         }
         
