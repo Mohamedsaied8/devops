@@ -5,7 +5,8 @@ TEST(Basic, TestShouldPASS)
     EXPECT_EQ(1,1);
 }
 
-TEST(simple, TestShouldFail)
+TEST(simple, Teststring)
 {
-    EXPECT_EQ(11,3);
+    const char *str = "hello";
+    EXPECT_EQ(str,"hello");
 }
